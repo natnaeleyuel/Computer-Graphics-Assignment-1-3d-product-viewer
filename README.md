@@ -1,93 +1,97 @@
-
-# 🪑 3D Product Viewer - Interactive Chair Configurator
+# 3D Product Viewer - Interactive Chair Configurator
 
 ## 📸 Preview
 ![image](https://github.com/user-attachments/assets/20394067-ad1c-4e4f-8c5c-35c76e0f24b0)
 
-A responsive Three.js application that demonstrates interactive 3D product visualization using basic geometries. Built as part of a computer graphics assignment.
+An interactive web-based 3D product viewer developed as part of a computer graphics assignment. The project uses **Three.js** to render a chair model built from primitive geometries and provides a responsive interface for exploring product visualization, lighting, and user interaction in real time.
 
-## ✨ Features
+## Project Overview
 
-### Core Requirements
-✅ **Scene Setup**  
-- PerspectiveCamera with OrbitControls  
-- Responsive WebGLRenderer  
-- Auto-resizing on window changes  
+This project demonstrates how computer graphics concepts can be applied in a practical product-viewing experience. It focuses on scene composition, object modeling, lighting, interaction, and camera animation, all within a browser-based 3D environment.
 
-✅ **Product Modeling**  
-- Chair constructed from primitive geometries (Boxes, Cylinders)  
-- MeshStandardMaterial for realistic lighting  
-- Centered at world origin (0,0,0)  
+## Contents
 
-✅ **Lighting System**  
-- Ambient light for base illumination  
-- Directional light with shadows  
-- Strategic light positioning  
+- **`index.html`**: Main entry point for the application.
+- **`scripts/`**: JavaScript modules for scene setup, product creation, lighting, interaction, and camera behavior.
+- **`styles/`**: Styling for the UI and responsive layout.
+- **`package.json`**: Project metadata and dependency configuration.
+- **`package-lock.json`**: Locked dependency versions.
+- **`README.md`**: Project documentation and usage guide.
 
-✅ **Interactions**  
-- Raycasting for part selection  
-- Visual feedback on hover/click  
-- Dynamic info panel showing part details  
+## Features
 
-✅ **Camera Animation**  
-- Smooth auto-rotation around Y-axis  
-- Manual control override  
-- Adjustable rotation speed  
+- **Scene Setup**
+  - Perspective camera with orbit controls
+  - Responsive WebGL renderer
+  - Automatic resizing on window changes
 
-### Bonus Features
-🔹 Mobile-responsive UI  
-🔹 Loading screen with spinner  
-🔹 Fullscreen mode toggle  
+- **Product Modeling**
+  - Chair model created from primitive geometries such as boxes and cylinders
+  - Realistic materials using `MeshStandardMaterial`
+  - Object centered at the world origin
 
-## 🛠️ Technical Implementation
+- **Lighting System**
+  - Ambient lighting for base illumination
+  - Directional light with shadow support
+  - Balanced light positioning for depth and clarity
 
-```mermaid
-graph TD
-    A[main.js] --> B[initScene.js]
-    A --> C[createProduct.js]
-    A --> D[addLighting.js]
-    A --> E[interaction.js]
-    A --> F[cameraAnimation.js]
-```
+- **Interactions**
+  - Raycasting for selecting chair components
+  - Hover and click feedback
+  - Dynamic information panel for selected parts
 
-**Key Dependencies:**
-- Three.js
-- OrbitControls
-- Font Awesome Icons
+- **Camera Animation**
+  - Smooth auto-rotation around the Y-axis
+  - Manual orbit control override
+  - Adjustable rotation behavior
 
-## 🚀 Setup
+- **Bonus Features**
+  - Mobile-responsive interface
+  - Loading screen with spinner
+  - Fullscreen mode toggle
 
-1. Clone repository:
-   ```bash
-   git clone https://github.com/natnaeleyuel/3d-product-viewer.git
+## Technology Stack
+
+- **Graphics Library:** Three.js
+- **Languages:** JavaScript, HTML, CSS
+- **Controls:** OrbitControls
+- **UI Assets:** Font Awesome
+
+## Usage
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/natnaeleyuel/Computer-Graphics-Assignment-1-3d-product-viewer.git
    ```
 2. Install dependencies:
-   ```bash
-   npm install three
+   ```sh
+   npm install
    ```
-3. Open `index.html` in browser
+3. Open `index.html` in your browser, or serve the project locally if preferred.
 
-## 🎮 Usage
+## Interaction Guide
 
-1. **Rotate**: Left-click + drag  
-2. **Zoom**: Scroll wheel  
-3. **Pan**: Right-click + drag  
-4. **Select Parts**: Click on any chair component  
-5. **Toggle Auto-Rotate**: Click 🔄 button  
+- **Rotate:** Left-click and drag
+- **Zoom:** Mouse scroll wheel
+- **Pan:** Right-click and drag
+- **Select parts:** Click on chair components
+- **Toggle auto-rotate:** Use the rotation control button
 
-## 📚 Learning Outcomes
+## Learning Outcomes
 
-- Mastered Three.js scene composition
-- Implemented advanced raycasting
-- Developed modular JavaScript architecture
-- Solved 3D lighting challenges
-- Created responsive WebGL experiences
+- Applied core computer graphics concepts in a browser environment
+- Built interactive 3D scenes with Three.js
+- Implemented raycasting for object selection
+- Designed modular JavaScript for graphics features
+- Improved responsive WebGL presentation techniques
 
-## 🌟 Future Enhancements
+## Future Enhancements
 
-- [ ] Texture mapping
-- [ ] Multi-product selector
-- [ ] AR preview mode
-- [ ] Custom color picker
+- Texture mapping support
+- Multi-product switching
+- AR preview mode
+- Custom color picker for product customization
 
-## **Developed by Natnael Eyuel**
+---
+
+*Developed by [natnaeleyuel](https://github.com/natnaeleyuel)*
